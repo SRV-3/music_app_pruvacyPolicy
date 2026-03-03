@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alps Post & Harmony - Music App</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased selection:bg-[#723326] selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-[#faf8f5]/80 backdrop-blur-md border-b border-[#3c5c47]/10 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3 cursor-pointer group">
+                <div class="w-10 h-10 rounded-full bg-[#3c5c47] flex items-center justify-center text-white font-bold group-hover:rotate-12 transition-transform duration-300 shadow-md">
+                    <img class="rounded-full" src="./assets/logo.png" alt="">
+                </div>
+                <span class="text-xl font-bold text-[#3c5c47] tracking-wide">Alps Post</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="#features" class="text-gray-600 hover:text-[#723326] transition-colors duration-300 relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-[#723326] hover:after:scale-x-100 after:transition-transform after:duration-300">Features</a>
+                <a href="privacy.html" class="text-gray-600 hover:text-[#723326] transition-colors duration-300">Privacy Policy</a>
+                <a href="#download" class="bg-[#3c5c47] text-white px-5 py-2 rounded-full hover:bg-[#2a4232] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">Get the App</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col-reverse lg:flex-row items-center gap-12">
+            
+            <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-[#3c5c47]/10 text-[#3c5c47] font-semibold text-sm mb-6 animate-fade-in border border-[#3c5c47]/20">
+                    Experience the Pulse of the Peaks
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate-fade-in delay-100">
+                    Your Soundtrack for the <br/>
+                    <span class="text-gradient">Great Outdoors.</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg animate-fade-in delay-200">
+                    High-fidelity audio, offline summit syncing, and curated couriers of music. Take your favorite tracks wherever the trail leads you.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 animate-fade-in delay-300">
+                    <a href="#download" class="px-8 py-4 rounded-full bg-[#723326] text-white font-bold text-lg hover:bg-[#58271d] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>Get the App</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 flex justify-center lg:justify-end animate-fade-in delay-200">
+                <div class="relative w-72 h-[500px] bg-white rounded-[2.5rem] border-8 border-gray-900 shadow-2xl overflow-hidden animate-float">
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#3c5c47] to-[#1a281e] flex flex-col items-center pt-10 px-4">
+                        <div class="w-32 h-32 rounded-lg bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg mb-6 flex items-center justify-center">
+                            <span class="text-4xl"><img src="./assets/logo.png" alt=""></span>
+                        </div>
+                        <h3 class="text-white font-bold text-xl mb-1">Mountain Echoes</h3>
+                        <p class="text-white/70 text-sm mb-8">Alps Post & Harmony</p>
+                        
+                        <div class="w-full bg-white/10 rounded-full h-1.5 mb-6">
+                            <div class="bg-[#723326] w-1/3 h-full rounded-full"></div>
+                        </div>
+                        <div class="flex gap-6 items-center text-white">
+                            <button class="hover:scale-110 transition-transform">⏮</button>
+                            <button class="w-14 h-14 bg-[#723326] rounded-full flex items-center justify-center hover:scale-105 transition-transform shadow-lg">▶</button>
+                            <button class="hover:scale-110 transition-transform">⏭</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 bg-white relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#3c5c47] mb-4">Crafted for the Journey</h2>
+                <div class="w-20 h-1 bg-[#723326] mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="group bg-[#faf8f5] p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-300">
+                    <div class="w-16 h-16 bg-[#3c5c47]/10 text-[#3c5c47] rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:bg-[#3c5c47] group-hover:text-white transition-all duration-300">
+                        🎧
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Nature's Symphony</h3>
+                    <p class="text-gray-600 leading-relaxed">Lossless audio quality that preserves every acoustic detail, just like the silence of the woods.</p>
+                </div>
+
+                <div class="group bg-[#faf8f5] p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 delay-100">
+                    <div class="w-16 h-16 bg-[#723326]/10 text-[#723326] rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:bg-[#723326] group-hover:text-white transition-all duration-300">
+                        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 19H20V12H22V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V12H4V19ZM14 9H19L12 16L5 9H10V3H14V9Z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Offline Summit</h3>
+                    <p class="text-gray-600 leading-relaxed">No signals at the peak? No problem. Download your entire library for zero-buffering playback.</p>
+                </div>
+
+                <div class="group bg-[#faf8f5] p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 delay-200">
+                    <div class="w-16 h-16 bg-[#3c5c47]/10 text-[#3c5c47] rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 group-hover:bg-[#3c5c47] group-hover:text-white transition-all duration-300">
+                        📯
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-800">Curated Couriers</h3>
+                    <p class="text-gray-600 leading-relaxed">Discover hand-picked playlists delivered to you like old-world letters, tailored to your mood.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1a281e] text-white/70 py-12 border-t-4 border-[#723326]">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl">⛰️</span>
+                <span class="text-xl font-bold text-white tracking-wide">Alps Post & Harmony</span>
+            </div>
+            <p class="text-sm">&copy; 2026 All rights reserved.</p>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="mailto:hello@alpspost.com" class="hover:text-white transition-colors duration-200">Contact Support</a>
+                <a href="privacy.html" class="text-[#723326] font-bold hover:text-white transition-colors duration-200">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
